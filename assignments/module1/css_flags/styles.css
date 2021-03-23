@@ -1,0 +1,171 @@
+body{
+    background-color: rgb(155, 153, 148);
+}
+.frBlueRectangle {
+    display: inline-block;
+  height: 200px;
+  width: 100px;  
+  background-color: #002495;
+}
+.frWhiteRectangle{
+    display: inline-block;
+    height: 200px;
+    width: 100px;
+    background-color:  #FFFFFF;
+}
+.frRedRectangle{
+    display: inline-block;
+    height: 200px;
+    width: 100px;
+    background-color: #ED2938;
+}
+.deBlackRectangle{
+    height: 66px;
+    width: 333px;
+    background-color: #000000;
+}
+.deRedRectangle{
+    height: 66px;
+    width: 333px;
+    background-color: #DE0002;
+}
+.deYellowRectangle{
+    height: 66px;
+    width: 333px;
+    background-color: #FFCE00;
+}
+.mgWhiteRectangle{
+    height: 200px;
+    width: 100px;
+    background-color: #FFFFFF; 
+    position: absolute;
+    
+}
+.mgRedRectangle{
+    height: 100px;
+    width: 200px;
+    background-color: #FC3E32;
+    position: relative;
+    left: 100px;
+
+    
+}
+.mgGreenRectangle{
+    height: 100px;
+    width: 200px;
+    background-color:  #007E39;
+    position: relative;
+    left: 100px;
+   
+}
+.chRedSquare{
+    height: 200px;
+    width: 200px;
+    background-color: #FF0002;
+
+}
+.chWhiteHorRectangle{
+    height: 35px;
+    width: 140px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 37px;
+    top: 1000px;
+
+}
+.chWhiteVerRectangle{
+    height: 140px;
+    width: 35px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 87px;
+    top: 950px;
+
+}
+.seBlue{
+    background-color: #0269A6;
+    height: 200px;
+    width: 533px;
+}
+.seVerYellow{
+    background-color: #FECC00;
+    height: 200px;
+    width: 50px;
+    position: absolute;
+    left: 150px;
+    top: 1201px;
+    
+}
+.seHorYellow{
+    background-color: #FECC00;
+    height: 50px;
+    width: 533px;
+    position: absolute;
+    top: 1280px;
+}
+.gmRed{
+    background-color:  #CE1127;
+    height: 66px;
+    width: 300px;
+}
+.gmWhite{
+    background-color: #FFFFFF;
+    height: 66px;
+    width: 300px;
+
+}
+.gmBlue{
+   background-color: #0D1D8B; 
+   height: 44px;
+   width: 300px;
+   position: absolute;
+   top: 1560px;
+   
+}
+.gmGreen{
+    background-color: #3B7827;
+    height: 66px;
+    width: 300px;
+}
+.jpWhite{
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 300px;
+}
+.jpRed{
+    background-color: #BC022C;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1810px;
+    left: 100px;
+
+}
+.neOrange{
+    background-color: #E15307;
+    height: 66px;
+    width: 233px;
+
+}
+.neWhite{
+    background-color: #FFFFFF;
+    height: 66px;
+    width: 233px;
+}
+.neGreen{
+    background-color: #10AF2A;
+    height: 66px;
+    width: 233px;
+}
+
+.neOrangeCir{
+    background-color: #E15307; 
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    position: absolute;
+    left: 95px;
+    top: 2110px;
+
+}

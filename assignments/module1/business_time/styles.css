@@ -1,0 +1,127 @@
+*{
+    background-color: rgb(43, 43, 43);
+    font-family: sans-serif;
+    color: white;
+    
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#topnav{
+    margin: 0 25%;
+    height: 40px;
+    width: 50%;
+    border: 2px solid rgb(199, 197, 197);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+
+
+
+}
+#header2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#paylist{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#paymentdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    bottom: 50px;
+}
+#payimg{
+    width: 650px;
+    height: 500px;
+}
+#ourstorydiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#ourstoryimg{
+    margin: 0 35%;
+}
+#contacimg{
+    margin: 0 20%;
+}
+#badmemes{
+    display: inline;
+    margin: 0 10%;
+}
+#badmeme1{
+    height: 350px;
+    width: 450px;
+}
+#badmeme2{
+    height: 345px;
+    width: 450px;
+}
+#badmeme3{
+    height: 350px;
+    width: 450px;
+}
+#homefooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#takemymoney{
+    margin: 0 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+    width: 800px;
+}
+@media only screen and (max-width: 650px){
+    #badmemes{
+        display: block;
+        margin: 0 10%;
+    }
+    #takemymoney{
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 250px;
+    width: 500px;
+    }
+    #ourstoryimg{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 10%;
+        width: 500px;
+        height: 500px;
+    }
+    #payimg{
+        width: 400px;
+        height: 250px;  
+    }
+    #contacimg{
+        margin: 0 20%;
+        height: 250px;
+        width: 400px;
+
+    }
+}
