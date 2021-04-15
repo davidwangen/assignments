@@ -2,6 +2,11 @@
     background-color: rgb(44, 43, 43);
 }
 #square{
-    border-style: solid white 3px;
-    size: 200px, 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    height: 500px;
+    width: 500px;
+    background-color: orange;
 }
