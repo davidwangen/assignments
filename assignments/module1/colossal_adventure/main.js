@@ -22,11 +22,10 @@ function Enemies (enemyName , enemyHealth , enemyMinDamage , enemyMaxDamage , en
     this.enemyMaxDamage = enemyMaxDamage
     this.enemyAlive = enemyAlive
 }
-let bandit = new Enemies("Bandit", 6  , 1 , 4 )
-let spider = new Enemies("Giant Spider" , 4 , 2 , 5 )
-let cyclops = new Enemies("Cyclops", 8 , 4 , 5 )
-let listOfEnemies = []
-listOfEnemies.push(bandit,spider,cyclops)
+let bandit = new Enemies("Bandit", 6  , 2 , 4 )
+let spider = new Enemies("Giant Spider" , 4 , 3 , 6 )
+let cyclops = new Enemies("Cyclops", 8 , 4 , 6 )
+let listOfEnemies = [bandit, spider, cyclops]
 function randomEnemySpawn (){
     let randomEnemy = listOfEnemies[Math.floor(Math.random() * listOfEnemies.length)]
     return randomEnemy
@@ -39,7 +38,7 @@ while (player.isAlive === true){
     let rpgGame = readlineSync.question("Open raods ahead want to explore? w = walk , p = check player stats , x = exit game : "  )
     if (rpgGame === "x"){
         player.isAlive = false
-        console.log("You have had enough, time to take the riches " +player.inventory+  " and retire while you can")
+        console.log("You have had enough, time to take your treasue : " +player.inventory+  " and retire while you can")
     } else if (rpgGame === "w"){
         walk()
     } else if (rpgGame === "p"){
@@ -59,6 +58,9 @@ function walk(){
 //fighting function
 function fight(){
     let enemyToFight = randomEnemySpawn()
+    bandit.enemyHealth = 6
+    spider.enemyHealth = 4
+    cyclops.enemyHealth = 8
     let enemyAttackDamage = Math.floor(Math.random() * (enemyToFight.enemyMaxDamage - enemyToFight.enemyMinDamage + 1 )) +enemyToFight.enemyMinDamage
     let playerAttackDamage =  Math.floor(Math.random() * (player.maxDamage - player.minDamage + 1)) + player.minDamage
     console.log("A " + enemyToFight.enemyName + " appears! ")
@@ -76,7 +78,7 @@ function fight(){
                      let randomItem = items[Math.floor(Math.random() * items.length)]
                      player.inventory.push(randomItem)
                      console.log(" You attack for " +playerAttackDamage+ " damage! The " + enemyToFight.enemyName + " has been defeted! You found a " +randomItem+ " and gain 3 health!")
-
+                    
                  }else if (enemyToFight.enemyHealth > 0){
                     console.log(" You attack! The " + enemyToFight.enemyName + " took " +playerAttackDamage+ " damage they have " +enemyToFight.enemyHealth+ " health left" )
                     player.health = player.health - enemyAttackDamage
