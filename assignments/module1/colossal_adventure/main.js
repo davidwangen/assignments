@@ -64,20 +64,20 @@ function fight(){
     let enemyAttackDamage = Math.floor(Math.random() * (enemyToFight.enemyMaxDamage - enemyToFight.enemyMinDamage + 1 )) +enemyToFight.enemyMinDamage
     let playerAttackDamage =  Math.floor(Math.random() * (player.maxDamage - player.minDamage + 1)) + player.minDamage
     console.log("A " + enemyToFight.enemyName + " appears! ")
-    while(player.health > 0 && enemyToFight.enemyHealth > 0){
+    while(player.isAlive === true && enemyToFight.enemyHealth > 0){
         readlineSync.setDefaultOptions({limit:["a" , "r" ]})
         let fightOption = readlineSync.question("What will you do? a = attack , r = run ")
-        if (fightOption === "a"){ 
-                if (player.health <= 0){
+           if (fightOption === "a"){ 
+                enemyToFight.enemyHealth = enemyToFight.enemyHealth - playerAttackDamage 
+            if (player.health <= 0){
                     console.log("You have died the adventure ends")
                     player.isAlive = false
-                }
-                 enemyToFight.enemyHealth = enemyToFight.enemyHealth - playerAttackDamage 
-                 if(enemyToFight.enemyHealth <= 0){
-                     player.health =player.health + 3
-                     let randomItem = items[Math.floor(Math.random() * items.length)]
-                     player.inventory.push(randomItem)
-                     console.log(" You attack for " +playerAttackDamage+ " damage! The " + enemyToFight.enemyName + " has been defeted! You found a " +randomItem+ " and gain 3 health!")
+                }   
+            if(enemyToFight.enemyHealth <= 0){
+                 player.health =player.health + 3
+                 let randomItem = items[Math.floor(Math.random() * items.length)]
+                 player.inventory.push(randomItem)
+                 console.log(" You attack for " +playerAttackDamage+ " damage! The " + enemyToFight.enemyName + " has been defeted! You found a " +randomItem+ " and gain 3 health!")
                     
                  }else if (enemyToFight.enemyHealth > 0){
                     console.log(" You attack! The " + enemyToFight.enemyName + " took " +playerAttackDamage+ " damage they have " +enemyToFight.enemyHealth+ " health left" )
@@ -89,20 +89,22 @@ function fight(){
             }        
             
         if (fightOption === "r"){
-            let runChance = Math.floor(Math.random() * 2)
-                if(runChance === 1){
-                     player.health = player.health - enemyAttackDamage
-                    console.log("You could not escape! The " + enemyToFight.enemyName + " attacks you! You take " +enemyAttackDamage+ " damage you have " +player.health+ " left")
+        let runChance = Math.floor(Math.random() * 2)
+        if(runChance === 1){
+            enemyToFight.enemyHealth = 0
+            console.log("You managed to escape!")
             }else{
-                enemyToFight.enemyHealth = 0
-                console.log("You managed to escape!")
-                 }
+                player.health = player.health - enemyAttackDamage
+               console.log("You could not escape! The " + enemyToFight.enemyName + " attacks you! You take " +enemyAttackDamage+ " damage you have " +player.health+ " left")
+                }if(player.health <= 0){
+                console.log("You have died the adventure ends")
+                player.isAlive = false           
+           }
                
     
         }
 
     }
+
 }
 
-
-// Figure out how to make a copy of enemies so that game can continue
