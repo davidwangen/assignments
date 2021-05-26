@@ -38,7 +38,7 @@ while (player.isAlive === true){
     let rpgGame = readlineSync.question("Open raods ahead want to explore? w = walk , p = check player stats , x = exit game : "  )
     if (rpgGame === "x"){
         player.isAlive = false
-        console.log("You have had enough, time to take your treasue : " +player.inventory+  " and retire while you can")
+        console.log("You have had enough, time to take your treasue :" +player.inventory+  " and retire while you can")
     } else if (rpgGame === "w"){
         walk()
     } else if (rpgGame === "p"){
@@ -86,11 +86,11 @@ function fight(){
                  }
                  
                   
-            }        
+             }        
             
-        if (fightOption === "r"){
-        let runChance = Math.floor(Math.random() * 2)
-        if(runChance === 1){
+            if (fightOption === "r"){
+            let runChance = Math.floor(Math.random() * 2)
+            if(runChance === 1){
             enemyToFight.enemyHealth = 0
             console.log("You managed to escape!")
             }else{
