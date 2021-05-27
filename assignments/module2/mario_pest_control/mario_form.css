@@ -1,0 +1,106 @@
+#header-h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    
+}
+#header-h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px; 
+}    
+
+#goombali{
+    font-style: inherit;
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+#goombaspic{
+    height: 200px;
+    width: 200px;
+    
+}
+#bob-ombli{
+    font-style: inherit;
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+    width: 305px; 
+}
+#bob-ombspic{
+    height: 200px;
+    width: 200px;
+}
+#cheepcheepsli{
+    font-style: inherit;
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+    width: 370px; 
+}
+#cheep-cheepspic{
+    height: 200px;
+    width: 200px;
+}
+
+#the-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-right: 900px;
+    
+}
+#goombas{
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+    width: 290px;
+}
+#bobOmbs{
+    font-size: xx-large; 
+    background-color: black;
+    color: white;
+    width: 300px; 
+}
+#cheepCheeps{
+    font-size: xx-large;
+    background-color: black;
+    color: white;
+    width: 345px;
+}
+#goomba-number{
+    width: 50px;
+    
+}
+#bobomb-number{
+    width: 50px;
+}
+#cheepcheeps-number{
+    width: 50px;
+}
+#button{
+    width: 100px;
+    font: larger;
+}
+#cost{
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:black;
+    color: white;
+    width: 400px;
+    
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    width: 300px;
+}
