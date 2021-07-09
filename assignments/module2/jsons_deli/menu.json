@@ -3,12 +3,12 @@
         {
             "name": "chips and queso",
             "ingredients":["tortila chips", "cheese sauce", "chorizo"],
-            "discription": "cripsy tortila chips served with creamy cheese sauce with ground chorizo" 
+            "discription": "cripsy tortila chips served with creamy cheese sauce with ground chorizo." 
         },
         {
             "name": "veggie plate",
             "ingredients": ["carrots", "celery", "cherry tomatos", "olives", "ranch dip"],
-            "discription": "variety of cut vegtables with ranch dipping sauce "
+            "discription": "variety of cut vegtables with ranch dipping sauce."
 
         }
     ],
@@ -36,7 +36,7 @@
             {
                 "name": "philly cheese steak",
                 "ingredients":["philly steak", "cheddar cheese sauce", "green peppers", "onions", "sub roll"],
-                "discription": "thin sliced steak topped with grilled green peppers, onions, and cheese sauce on a toasted sub roll"
+                "discription": "thin sliced steak topped with grilled green peppers, onions, and cheese sauce on a toasted sub roll."
             }
         ],
 
@@ -44,12 +44,12 @@
             {
                 "name": "brownie",
                 "ingredients":["butter","sugar", "eggs", "flour", "cocoa powder", "baking powerder" ],
-                "discription": "warm fudgy brownie"
+                "discription": "warm fudgy brownie."
             },
             {
                 "name": "chocolate chip cookie",
                 "ingredients":["chocolate chips","butter", "flour", "egg", "baking powerder", "sugar"],
-                "discription": "warm cookie with gooey chocolate chips"
+                "discription": "warm cookie with gooey chocolate chips."
             }
         ],
 
@@ -57,12 +57,12 @@
             {
                 "name": "lemonaid",
                 "ingredients":["lemons", "sugar", "water"],
-                "discription": "cool refreshing ice cold lemonaid"
+                "discription": "cool refreshing ice cold lemonaid."
             },
             {
                 "name": "peach tea",
                 "ingredients":["peaches", "tea"],
-                "discription": "fresh brewed ice tea infued with peaches and fresh cut peach slices"
+                "discription": "brewed ice tea infued with peaches and fresh cut peach slices."
             }
         ]
     
