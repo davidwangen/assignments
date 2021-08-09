@@ -31,7 +31,6 @@ function listData(data){
         completed.type = 'checkbox'
         completed.value = data[i].completed
         completed.checked = data[i].completed
-        // to make completed itmes stay crossed off if refreshed
         if(completed.checked===true){
             title.style.textDecoration="line-through"
             description.style.textDecoration="line-through"
