@@ -3,10 +3,13 @@ import BlogPost from "./BlogPost"
 import data from "./dataArray"
 
 function BLoglist(){
-    const posts = data.map(post => <BlogPost  title = {post.title} subtitle = {post.subtitle} author = {post.author} date = {post.date}/>)
+    const posts = data.map(post => <BlogPost  title = {post.title} subTitle = {post.subTitle} author = {post.author} date = {post.date}/>)
     return (
         <div>
             {posts}
+            <div>
+                <a>Older Posts</a>
+            </div>
         </div>
     )
 }
