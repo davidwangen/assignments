@@ -1,0 +1,17 @@
+.grid{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px);
+
+   
+}
+.gridBox{
+   border: 2px solid black; 
+    
+}
+.Btn{
+    height: 25px;
+    width: auto;
+    margin-top: 10px;
+}
