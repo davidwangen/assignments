@@ -5,7 +5,7 @@ class App extends Component {
         super()
         this.state = {
             wholeName:"",
-            nameList:["Name1", "Name2"]
+            nameList:[]
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleButtonClick= this.handleButtonClick.bind(this)
@@ -17,23 +17,28 @@ class App extends Component {
             [name]: value
         })
     }
-    handleButtonClick(){
-        
+    handleButtonClick(e){
+        e.preventDefault()
+      this.setState(prevState => ({
+          nameList: [...prevState.nameList ,this.state.wholeName]
+      }))
     }
 
     render(){
         return (
             <form>
-                <input 
-                type = "text" 
+                <input
+                name="wholeName"  
                 value={this.state.wholeName} 
-                name="wholeName" 
                 placeholder= "Name" 
                 onChange={this.handleChange}
                 />
+                <br />
                 <h1>{this.state.wholeName}</h1>
+                <br />
                 <button onClick={this.handleButtonClick}>Add to list</button>
-                <ol>{this.state.nameList}</ol>
+                <br />
+                <div name="nameList">{this.state.nameList}</div>
             </form>
         )
     }
