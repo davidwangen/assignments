@@ -19,8 +19,8 @@ class App extends Component {
     }
     handleButtonClick(e){
         e.preventDefault()
-      this.setState(prevState => ({
-          nameList: [...prevState.nameList ,this.state.wholeName]
+            this.setState(prevState => ({
+                nameList: [...prevState.nameList ,this.state.wholeName]
       }))
     }
 
