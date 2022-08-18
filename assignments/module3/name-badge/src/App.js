@@ -22,13 +22,9 @@ class App extends Component {
         const {name, value} = e.target
         this.setState({
             [name]: value 
-        })
-        const re = /^[0-9\b]+$/
-          if (e.target.value === '' || re.test(e.target.value)) {
-             this.setState({number: e.target.value})
-          
+        })   
       }       
-    }
+    
 
     handleButtonClick(e){
         e.preventDefault()
@@ -61,7 +57,7 @@ class App extends Component {
                 value={this.state.firstName} 
                 placeholder= "First Name" 
                 onChange={this.handleChange}
-                required
+                equired
                 />
                 <input
                 type={"text"}
@@ -69,7 +65,7 @@ class App extends Component {
                 value={this.state.lastName} 
                 placeholder= "Last Name" 
                 onChange={this.handleChange}
-                required
+                equired
                 />
                 <input
                 type={"email"}
@@ -77,7 +73,7 @@ class App extends Component {
                 value={this.state.eMail} 
                 placeholder= "Email" 
                 onChange={this.handleChange}
-                required
+                equired
                 />
                 <input
                 type={"text"}
@@ -85,7 +81,7 @@ class App extends Component {
                 value={this.state.placeOfBirth} 
                 placeholder= "Place of Birth" 
                 onChange={this.handleChange}
-                required
+                equired
                 />
                 <input
                 type={"number"}
@@ -93,7 +89,7 @@ class App extends Component {
                 value={this.state.phoneNumber} 
                 placeholder= "Phone" 
                 onChange={this.handleChange}
-                required
+                equired
                 />
                 <input
                 type={"text"}
