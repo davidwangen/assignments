@@ -16,6 +16,7 @@ function Meme(props) {
     axios
       .get("https://api.imgflip.com/get_memes")
       .then((response) => {
+        console.log(response)
         setAllMemes(response.data.data.memes);
       })
       .catch((error) => {
