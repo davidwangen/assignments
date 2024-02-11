@@ -11,6 +11,7 @@ function Meme(props) {
   });
 
   const [allMemes, setAllMemes] = useState([]);
+  console.log(allMemes)
 
   React.useEffect(function () {
     axios
